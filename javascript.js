@@ -5,3 +5,10 @@ for(let i=0;i<256;i++){
     box.textContent="PO";//will be remved in future
     container.appendChild(box);
 }
+
+const boxes=document.querySelectorAll(".box");
+boxes.forEach(box=>{
+  box.addEventListener('mouseover',function(){
+    this.style.backgroundColor='red';
+  });
+});
