@@ -5,10 +5,11 @@ for(let i=0;i<256;i++){
   container.appendChild(box);
 }
 
+const myColors=[,"#FF0000","#FF8000","#FFFF00","#00FF00","#00FFFF","#7F00FF","#FFCCE5","#808080"];
 let boxes=document.querySelectorAll(".box");
 boxes.forEach(box=>{
 box.addEventListener('mouseover',function(){
-  this.style.backgroundColor='red';
+  this.style.backgroundColor=myColors[Math.floor(Math.random()*myColors.length)];
 });
 });
 
@@ -36,7 +37,7 @@ function createGrid() {
       grid.style.height = boxSize + 'rem';
      Container.appendChild(grid);
      grid.addEventListener("mouseenter", function () {
-      this.style.backgroundColor = "red";
+      this.style.backgroundColor = myColors[Math.floor(Math.random()*myColors.length)];
      });
   }
 }
