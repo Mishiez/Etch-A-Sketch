@@ -5,11 +5,17 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+h1{
+  font-family: cursive, Times, serif; 
+  font-style: italic;
+  font-size:3em;
+}
 h1,
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #94A7AE;
 }
 
 #container {
@@ -20,8 +26,14 @@ body{
 }
 
 .box,.grid {
-  border: 0.1px solid black;
+  border: 0.1px solid #64766A;
   width: 2rem;
   height: 2rem;
 }
 
+button{
+  background-color: #C0A9BD;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
